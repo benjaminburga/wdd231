@@ -16,11 +16,9 @@ header {
     align-items: center;
     color: white;    
 }
-.nav-container a{
-    color: white;
-    text-decoration: none;
+h1{
+    font-size: 15pt;
 }
-
 
 .nav-links {
     list-style: none;
