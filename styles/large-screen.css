@@ -1,3 +1,4 @@
+/* styles/large-screen.css */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -16,8 +17,9 @@ header {
     align-items: center;
     color: white;    
 }
-h1{
-    font-size: 15pt;
+
+h1 {
+    font-size: 1.5rem; /* Adjust font size for better readability */
 }
 
 .nav-links {
@@ -37,11 +39,9 @@ h1{
     transition: color 0.3s ease-in-out;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: rgb(210, 210, 30);
-
 }
-
 
 .nav-toggle {
     display: none;
@@ -57,3 +57,32 @@ h1{
     transition: all 0.3s ease-in-out;
 }
 
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-toggle {
+        display: flex;
+    }
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
