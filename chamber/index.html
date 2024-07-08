@@ -15,7 +15,7 @@
     <!-- Meta Open Graph Tags -->
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/hero-image.jpg">
+    <meta property="og:image" content="chamber/images/hero-image.jpg">
     <meta property="og:url" content="https://benjaminburga.github.io/wdd231/chamber/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,11 +42,13 @@
     
     <main>
         <section id="hero">
+            <h2>PROMOTING ECONOMIC GROWTH</h2>
             <img src="images/hero-image.jpg" alt="Chamber of Commerce Hero Image">
             <button class="cta-button">Join the Chamber</button>
         </section>
 
-        <section id="events">
+        <section class="section2">
+        <div id="events">
             <h2>Current Events</h2>
             <p>Upcoming events or news relevant to the Chamber...</p>
             <ul>
@@ -54,18 +56,21 @@
                 <li>Networking Breakfast - September 10, 2024</li>
                 <li>Small Business Workshop - October 15, 2024</li>
             </ul>
-        </section>
+        </div>
 
-        <section id="weather">
+        <div id="weather">
             <h2>Local Weather</h2>
             <div id="weather-info">
                 <p><strong>Current Temperature:</strong> <span id="current-temp"></span></p>
                 <p><strong>Weather Description:</strong> <span id="weather-description"></span></p>
-                <h3>Three Day Forecast</h3>
-                <ul id="forecast">
-                </ul>
             </div>
-        </section>
+        </div>
+        <div class="forecast">
+            <h3>Three Day Forecast</h3>
+            <ul id="forecast-list">
+            </ul>
+        </div>
+        </section> 
 
         <section id="spotlights">
             <h2>Company Spotlights</h2>

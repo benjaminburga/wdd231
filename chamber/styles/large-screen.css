@@ -73,6 +73,16 @@ header nav ul a:hover {
     margin: auto;
     opacity: 0.8;
 }
+#hero h2{
+    color: black;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    font-size: 40pt;
+    color:#023e8a;
+    
+}
 
 .cta-button {
     position: absolute;
@@ -82,11 +92,15 @@ header nav ul a:hover {
     padding: 1rem;
     border: none;
     cursor: pointer;
-    background-color: #023e8a;
+    background-color: black;
     border-radius: 8px;
     width: 12rem;
     color: white;
     font-weight: 600;
+}
+.section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #events{
@@ -104,7 +118,6 @@ header nav ul a:hover {
 #weather{
     text-align: center;
     padding: 1rem;
-    background-color: #f77f00;
     color: black;
 }
 #weather-info p{
@@ -114,7 +127,23 @@ header nav ul a:hover {
 
 #forecast li{
     list-style: none;
+    
 }
+.forecast{
+    text-align: center;
+    padding: 1rem;
+    color: black;}   
+#forecast-list{
+    list-style: none;
+    background-color: #ADCCC6;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+}
+#forecast-list li{
+    margin-bottom: 1rem;
+}
+
 
 #spotlights h2{
     text-align: center;

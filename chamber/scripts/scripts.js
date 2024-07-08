@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const forecastData = await forecastResponse.json();
             const dailyForecasts = forecastData.list.filter((forecast, index) => index % 8 === 0); // Obtener un pronóstico por día (cada 8 ítems)
 
-            const forecastList = document.getElementById('forecast');
+            const forecastList = document.getElementById('forecast-list');
             forecastList.innerHTML = ''; 
 
             dailyForecasts.forEach(forecast => {
