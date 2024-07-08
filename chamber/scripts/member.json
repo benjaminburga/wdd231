@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Company A",
+        "membership": "gold",
+        "image": "images/enterprise1.jpg",
+        "description": "Leading provider in industry."
+    },
+    {
+        "name": "Company B",
+        "membership": "silver",
+        "image": "images/enterprise2.jpg",
+        "description": "Dedicated to quality service."
+    },
+    {
+        "name": "Company C",
+        "membership": "gold",
+        "image": "images/enterprise3.jpg",
+        "description": "Innovative solutions for businesses."
+    },
+    {
+        "name": "Company D",
+        "membership": "bronze",
+        "image": "images/enterprise1.jpg",
+        "description": "Providing essential services."
+    }
+]

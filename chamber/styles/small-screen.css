@@ -1,0 +1,54 @@
+@media (max-width: 768px) {
+    header .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+    
+    header h1 {
+        margin: 0;
+        color: #023e8a;
+        font-size: 20pt;
+        padding: 1rem;
+    }
+    
+
+    #hero img {
+        opacity: 0.8;
+        height: 50vh;
+    
+    }
+    .nav-toggle{
+        background-color: #023e8a;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 0;
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    header nav ul li a {
+        padding: 0.5rem;
+        display: block;
+        width: 100%;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+}
