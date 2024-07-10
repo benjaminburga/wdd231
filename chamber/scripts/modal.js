@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('currentyear').textContent = currentYear;
     document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
-    var modal = document.getElementById('modal');
-    var learnMoreLink = document.getElementById('learn-more-link');
-    var closeButton = document.getElementsByClassName('close')[0];
+    const modal = document.getElementById('modal');
+    const learnMoreLink = document.getElementById('learn-more-link');
+    const closeButton = document.getElementsByClassName('close')[0];
 
     function openModal() {
         modal.style.display = 'block';
@@ -17,9 +17,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     learnMoreLink.addEventListener('click', openModal);
     closeButton.addEventListener('click', closeModal);
-
     window.addEventListener('click', function(event) {
-        if (event.target == modal) {
+        if (event.target === modal) {
             closeModal();
         }
     });
@@ -31,4 +30,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         this.classList.toggle('active');
         navMenu.classList.toggle('open');
     });
+
+    const timestampField = document.getElementById('timestamp');
+    const timestamp = new Date().toISOString();
+    timestampField.value = timestamp;
 });

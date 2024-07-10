@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber of Commerce">
     <meta name="author" content="Benjamin Burga">
-    <title>Chamber of Commerce - Home</title>
-    <script src="scripts/scripts.js" defer></script>
+    <title>Chamber of Commerce - Thank You</title>
+    <script src="scripts/thankyou.js" defer></script>
     <link rel="icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
@@ -22,13 +22,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-      <main>
+    <main>
         <div class="thankyou-message">
-            <h2>¡Gracias por enviar el formulario!</h2>
-            <p>Su información ha sido recibida con éxito.</p>
-            <p><a href="index.html">Volver a la página principal</a></p>
+            <h2>Thank you for submitting the form!</h2>
+            <p>Your information has been successfully received.</p>
+            <p><a href="index.html">Back to Home Page</a></p>
+        </div>
+        <div class="submitted-information">
+            <h3>Submitted Information:</h3>
+            <ul>
+                <li><strong>Name:</strong> <span id="firstname"></span> <span id="lastname"></span></li>
+                <li><strong>Email:</strong> <span id="email"></span></li>
+                <li><strong>Phone:</strong> <span id="phone"></span></li>
+                <li><strong>Organization:</strong> <span id="organization"></span></li>
+                <li><strong>Membership Level:</strong> <span id="membership-level"></span></li>
+                <li><strong>Business Description:</strong> <span id="business-description"></span></li>
+                <li><strong>Submission Date:</strong> <span id="timestamp"></span></li>
+            </ul>
         </div>
     </main>
     
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Benjamin Burga, Lima - Peru.</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
