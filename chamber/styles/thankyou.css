@@ -20,6 +20,7 @@ main {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80vh;
 }
 
 .thankyou-message {
@@ -27,6 +28,11 @@ main {
     margin-bottom: 20px;
     color: rgb(39, 39, 176);
 }
+.thankyou-message p a {
+    color: rgb(237, 8, 0);
+    padding: 1rem;
+}
+
 
 .submitted-information {
     margin-top: 20px;
