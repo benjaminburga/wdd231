@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join web page">
+    <meta name="author" content="Benjamin Burga">
+    <title>Join the website</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Meta Open Graph Tags -->
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2023/09/19/01/29/ai-generated-8261668_1280.jpg">
+    <meta property="og:url" content="https://benjaminburga.github.io/wdd231/chamber/">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/modal.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>Chamber of Commerce</h1>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chamber.html">Chamber</a></li>
+                    <li><a href="https://github.com/benjaminburga/wdd231">GitHub Profile</a></li>
+                    <li><a href="https://www.linkedin.com/in/benjamin-burga">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get" autocomplete="off">
+            <div class="form-group">
+                <label for="firstname">First Name: <span class="required">*</span></label>
+                <input type="text" id="firstname" name="firstname" autocomplete="given-name" required placeholder="Benjamin">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name: <span class="required">*</span></label>
+                <input type="text" id="lastname" name="lastname" autocomplete="family-name" required placeholder="Burga">
+            </div>
+            <div class="form-group">
+                <label for="organization-title">Applicant's Organizational Title: <span class="required">*</span></label>
+                <input type="text" id="organization-title" name="organization-title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" title="Please enter at least seven alphabetic characters, hyphens, or spaces." required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="off" required placeholder="example@example.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone: <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="123-456-7890">
+            </div>
+            <div class="form-group">
+                <label for="organization">Organization: <span class="required">*</span></label>
+                <input type="text" id="organization" name="organization" autocomplete="organization" required placeholder="Organization Name">
+            </div>
+            <div class="form-group">
+                <label for="membership-level">Select Membership Level:</label>
+                <select id="membership-level" name="membership-level">
+                    <option value="NP">NP Membership (No fee)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+                <span class="learn-more" id="learn-more-link">Learn More</span>
+            </div>
+            <div class="form-group">
+                <label for="business-description">Description: <span class="required">*</span></label>
+                <textarea name="business-description" id="business-description" rows="4" required placeholder="Enter business/organization description"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="hidden" id="timestamp" name="timestamp">
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Membership Benefits</h2>
+            <p>Membership in our Chamber of Commerce offers an invaluable platform to connect, learn and grow. From our basic NP membership that facilitates networking to our Silver and Gold levels that offer preferential access to events, training and advertising opportunities, each level is designed to support business growth and community engagement.</p>
+            <p><strong>NP Membership: </strong> No fee, basic benefits.</p>
+            <p><strong>Bronze Membership:</strong> Enhanced benefits.</p>
+            <p><strong>Silver Membership: </strong> More benefits than Bronze.</p>
+            <p> <strong>Gold Membership: </strong>Premium benefits, top-tier advantages.</p>
+        </div>
+        </div>
+    </div>
+    <button type="submit">Submit</button>
+    </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Benjamin Burga, Lima - Peru.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

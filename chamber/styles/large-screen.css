@@ -66,6 +66,11 @@ header nav ul a:hover {
     color: white;
     
 }
+#hero button a{
+    color: white;   
+    text-decoration: none;
+
+}
 
 #hero img {
     width: 100%;
