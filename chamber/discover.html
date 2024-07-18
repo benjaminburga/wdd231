@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce - Discover Page">
+    <meta name="author" content="Benjamin Burga">
+    <title>Discover - Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/discover-large-screen.css">
+    <link rel="stylesheet" href="styles/discover-small-screen.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+
+    <!-- Meta Open Graph Tags -->
+    <meta property="og:title" content="Chamber of Commerce - Discover Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2023/09/19/01/29/ai-generated-8261668_1280.jpg">
+    <meta property="og:url" content="https://benjaminburga.github.io/wdd231/chamber/discover.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>Chamber of Commerce</h1>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="grid-container">
+        <aside class="sidebar">
+            <h2>Relevant Information</h2>
+            
+            <div id="visit-message" class="sidebar-section">
+                <!-- El mensaje de la última visita se mostrará aquí -->
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Demographics</h3>
+                <p>Our community is diverse, with a population of over 50,000 residents. Key demographics include a mix of ages, with a significant number of young professionals and families.</p>
+                <img data-src="images/demographics.jpg" alt="Demographics Chart" class="lazyload">
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Events Calendar</h3>
+                <p>Stay updated with our upcoming events:</p>
+                <ul>
+                    <li>Annual Business Gala - August 20, 2024</li>
+                    <li>Networking Breakfast - September 10, 2024</li>
+                    <li>Small Business Workshop - October 15, 2024</li>
+                </ul>
+                <img data-src="images/calendar.jpg" alt="Events Calendar" class="lazyload">
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Local Attractions</h3>
+                <p>Explore our city's attractions, including parks, museums, and historic landmarks. Popular spots include the Central Park, City Museum, and the Historic Downtown.</p>
+                <img data-src="images/local-atraccion.jpg" alt="Local Attractions" class="lazyload">
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Economic Growth</h3>
+                <p>Our city is experiencing robust economic growth, driven by innovation and investment in key sectors. We are proud of our business-friendly environment and strong workforce.</p>
+                <img data-src="images/economic-growth.jpg" alt="Economic Growth" class="lazyload">
+            </div>
+        
+        </aside>
+
+        <section class="main-content">
+            <h2>Local Photos</h2>
+            <div class="photo-gallery">
+                <img src="images/image-1.jpg" alt="Local Scene 1" class="lazyload">
+                <img src="images/image-2.jpg" alt="Local Scene 2" class="lazyload">
+                <img src="images/img3.jpg" alt="Local Scene 3" class="lazyload">
+                <img src="images/img4.jpg" alt="Local Scene 4" class="lazyload">
+                <img src="images/img5.jpg" alt="Local Scene 5" class="lazyload">
+                <img src="images/img6.jpg" alt="Local Scene 6" class="lazyload">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Benjamin Burga, Lima - Peru.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+<script src="scripts/discover.js" defer></script>
+
+</html>
