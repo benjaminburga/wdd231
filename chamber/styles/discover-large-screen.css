@@ -1,11 +1,9 @@
-/* Basic CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;

@@ -9,11 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         const lastVisitDate = new Date(lastVisit);
         const daysDifference = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
+        const hoursDifference = Math.floor((now - lastVisitDate) / (1000 * 60 * 60));
 
         if (daysDifference < 1) {
-            visitMessage.innerHTML = '<p>Back so soon! Awesome!</p>';
+            if (hoursDifference < 1) {
+                visitMessage.innerHTML = '<p>Back so soon! Awesome!</p>';
+            } else {
+                visitMessage.innerHTML = `<p>Back after ${hoursDifference} hour${hoursDifference > 1 ? 's' : ''}! Awesome!</p>`;
+            }
         } else {
-            visitMessage.innerHTML = `<p>You last visited ${daysDifference} day${daysDifference > 1 ? 's' : ''} ago.</p>`;
+            const lastVisitTime = lastVisitDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            visitMessage.innerHTML = `<p>You last visited ${daysDifference} day${daysDifference > 1 ? 's' : ''} ago at ${lastVisitTime}.</p>`;
         }
     }
 
