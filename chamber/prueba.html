@@ -3,82 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revista Digital</title>
-    <link rel="stylesheet" href="prueba.css">
+    <title>Página en Mantenimiento</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+            text-align: center;
+            color: #333;
+            animation: backgroundAnimation 10s ease-in-out infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0%, 100% {
+                background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+            }
+            50% {
+                background: linear-gradient(135deg, #acb6e5 0%, #74ebd5 100%);
+            }
+        }
+
+        .container {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: 0 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .countdown {
+            font-size: 24px;
+            color: #ff0000;
+            font-weight: bold;
+            background: #f2f2f2;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 100px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: rotate(360deg);
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #007BFF;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Revista Digital</div>
-            <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#news">Noticias</a></li>
-                <li><a href="#articles">Artículos</a></li>
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <h1>Bienvenido a la Revista Digital</h1>
-        <p>Las últimas noticias y artículos de interés en un solo lugar</p>
-    </section>
-
-    <section id="news" class="news">
-        <h2>Noticias Destacadas</h2>
-        <div class="news-container">
-            <div class="news-item">
-                <img src="https://via.placeholder.com/300" alt="Noticia 1">
-                <h3>Título de Noticia 1</h3>
-                <p>Resumen de la noticia 1...</p>
-                <a href="#">Leer más</a>
-            </div>
-            <div class="news-item">
-                <img src="https://via.placeholder.com/300" alt="Noticia 2">
-                <h3>Título de Noticia 2</h3>
-                <p>Resumen de la noticia 2...</p>
-                <a href="#">Leer más</a>
-            </div>
-            <div class="news-item">
-                <img src="https://via.placeholder.com/300" alt="Noticia 3">
-                <h3>Título de Noticia 3</h3>
-                <p>Resumen de la noticia 3...</p>
-                <a href="#">Leer más</a>
-            </div>
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Logo">
         </div>
-    </section>
+        <h1>Estamos en Mantenimiento</h1>
+        <p>Lo sentimos, estamos realizando tareas de mantenimiento en nuestro sitio. Volveremos en breve.</p>
+        <p>Tiempo estimado para volver en línea:</p>
+        <div class="countdown" id="countdown">02:00:00:00</div>
+      
+    </div>
 
-    <section id="articles" class="articles">
-        <h2>Artículos Recientes</h2>
-        <div class="article-item">
-            <h3>Título de Artículo 1</h3>
-            <p>Contenido del artículo 1...</p>
-            <a href="#">Leer más</a>
-        </div>
-        <div class="article-item">
-            <h3>Título de Artículo 2</h3>
-            <p>Contenido del artículo 2...</p>
-            <a href="#">Leer más</a>
-        </div>
-        <div class="article-item">
-            <h3>Título de Artículo 3</h3>
-            <p>Contenido del artículo 3...</p>
-            <a href="#">Leer más</a>
-        </div>
-    </section>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        function startCountdown(duration, display) {
+            var timer = duration, days, hours, minutes, seconds;
+            setInterval(function () {
+                days = parseInt(timer / 86400, 10);
+                hours = parseInt((timer % 86400) / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Revista Digital. Todos los derechos reservados.</p>
-            <ul class="social-links">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </div>
-    </footer>
+                days = days < 10 ? "0" + days : days;
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    <script src="script.js"></script>
+                display.textContent = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var countdownTime = 60 * 60 * 48, // 48 hours (2 days)
+                display = document.querySelector('#countdown');
+            startCountdown(countdownTime, display);
+        };
+    </script>
 </body>
 </html>
