@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+    background-color: #121B25;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6DCF6E;
+}
+
+/* Navigation Hero */
+.nav-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-hero  h1{
+    background: linear-gradient(135deg, #4CAF50, #6e9acb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    font-size: 45pt;
+    margin: 2rem 0;
+    background: linear-gradient(135deg, #4CAF50, #6e9acb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+    font-size: 20pt;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 10rem;
+    text-align: center;
+    background-color: #cee7c8;
+
+}
+
+.intro-section h2 {
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #038214, #1571e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Latest News Section */
+.latest-news {
+    padding: 20px;
+    margin: 5rem 0;
+}
+
+.latest-news h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #038214, #1571e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(33.333% - 40px);
+    text-align: center;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.news-item h3 {
+    margin: 10px 0;
+    background: linear-gradient(135deg, #038214, #1571e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.news-item a {
+    display: block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+    background: linear-gradient(135deg, #038214, #1571e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+    color: #121B25;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #038214, #1571e1);
+    color: white;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+    
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(10, 170, 31, 0.1);
+}
+
+/* Events Section */
+.events {
+    padding: 20px;
+    text-align: center;
+}
+
+.events h2 {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin: 0 auto;
+    display: inline-block;
+    background: linear-gradient(135deg, #038214, #1571e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(45% - 40px);
+    text-align: center;
+    margin: 4rem;
+}
+
+/* Item Container */
+#itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(33.333% - 40px);
+    text-align: center;
+}
+
+.item h3 {
+    margin-top: 0;
+    background: linear-gradient(135deg, #038214, #1571e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#modal-close:hover,
+#modal-close:focus {
+    color: black;
+}
+
+/* Weather Section */
+.weather-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #cee7c8;
+    margin-top: 20px;
+}
+
+.weather-section h2 {
+    background: linear-gradient(135deg, #038214, #1571e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-item {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.weather-item img {
+    width: 100px;
+    height: auto;
+}
+
+.weather-item p {
+    margin: 10px 0;
+    font-size: 14pt;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+/* Plants Section */
+.plants-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #cee7c8;
+    margin-top: 20px;
+}
+
+.plants-section h2 {
+    background: linear-gradient(135deg, #038214, #1571e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.plants-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plant-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(33.333% - 40px);
+    text-align: center;
+}
+
+.plant-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.plant-item h3 {
+    margin: 10px 0;
+    background: linear-gradient(135deg, #038214, #1571e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+footer {
+    background-color: #121B25;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #CCFF33;
+}

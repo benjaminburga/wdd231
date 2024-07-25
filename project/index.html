@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Benjamin Burga">
+    <title>CGreen Gardens</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="img-project/favicon.ico">
+    <meta name="description" content="Promote sustainable living, provide educational resources on gardening, and encourage community involvement.">
+    <script src="scripts/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav-hero">
+        <h1>CGreen Gardens</h1> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <img src="images/green-973596_1280.jpg" alt="Lush green garden">
+        <div class="hero-text">
+            <h2>Welcome to CGreen Gardens</h2>
+            <p>Your community hub for sustainable gardening and engagement.</p>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="intro-text">
+            <h2>Introduction</h2>
+            <p>Learn about our mission to promote sustainable living and how you can get involved. Our community is dedicated to sharing knowledge and resources to help you create a thriving garden.</p>
+        </div>
+    </section>
+
+    <section class="latest-news">
+        <h2>Latest News</h2>
+        <div class="news-grid">
+            <div class="news-item">
+                <img src="images/news1.jpg" alt="Community Garden Workshop">
+                <h3>Community Garden Workshop</h3>
+                <p>Join us for our upcoming workshop where we will discuss the best practices for sustainable gardening.</p>
+                <a href="news1.html">Read More</a>
+            </div>
+            <div class="news-item">
+                <img src="images/news2.jpg" alt="New Seasonal Plants">
+                <h3>New Seasonal Plants</h3>
+                <p>Discover the best seasonal plants to grow in your garden this month. Learn about their benefits and care tips.</p>
+                <a href="news2.html">Read More</a>
+            </div>
+            <div class="news-item">
+                <img src="images/news3.jpg" alt="Volunteer Opportunities">
+                <h3>Volunteer Opportunities</h3>
+                <p>Find out how you can volunteer and contribute to our community gardening projects.</p>
+                <a href="news3.html">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="images/gallery2.jpg" alt="Gallery Image 2">
+            <img src="images/gallery3.jpg" alt="Gallery Image 3">
+            <img src="images/gallery4.jpg" alt="Gallery Image 4">
+            <img src="images/gallery5.jpg" alt="Gallery Image 5">
+            <img src="images/gallery6.jpg" alt="Gallery Image 6">
+        </div>
+    </section>
+
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <div class="events-list">
+            <div class="event">
+                <h3>Spring Planting Workshop</h3>
+                <p>March 25, 2024</p>
+                <p>Join us for a workshop on the best practices for planting in spring.</p>
+            </div>
+            <div class="event">
+                <h3>Community Garden Cleanup</h3>
+                <p>April 10, 2024</p>
+                <p>Help us clean and prepare our community garden for the new season.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="itemContainer" class="info-section">
+    </section>
+
+    <section class="weather-section">
+        <h2>Current Weather</h2>
+        <div id="weather-container" class="weather-container">
+        </div>
+    </section>
+
+    <section class="plants-section">
+        <h2>Plants Information</h2>
+        <form id="plant-search-form">
+            <input type="text" id="plant-query" placeholder="Enter plant name">
+            <button type="submit">Search</button>
+        </form>
+        <div id="plants-container" class="plants-container">
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close">&times;</span>
+            <h2 class="modal-title"></h2>
+            <p class="modal-body"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="last-year"></span> CGreen Gardens. <a href="attribuition.html">Resource Attributions</a></p>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
