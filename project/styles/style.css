@@ -1,3 +1,4 @@
+/* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,8 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Asegura que el header esté en el flujo normal del documento */
+    z-index: 1; /* Asegura que el header esté por debajo del menú hamburguesa */
 }
 
 nav ul {
@@ -45,7 +48,8 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
 }
-.nav-hero  h1{
+
+.nav-hero h1 {
     background: linear-gradient(135deg, #4CAF50, #6e9acb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -92,7 +96,6 @@ nav ul li a:hover {
     padding: 10rem;
     text-align: center;
     background-color: #cee7c8;
-
 }
 
 .intro-section h2 {
@@ -118,7 +121,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     background: linear-gradient(135deg, #038214, #1571e1);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 .news-grid {
@@ -149,7 +152,7 @@ nav ul li a:hover {
     margin: 10px 0;
     background: linear-gradient(135deg, #038214, #1571e1);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 .news-item a {
@@ -160,7 +163,7 @@ nav ul li a:hover {
     transition: color 0.3s;
     background: linear-gradient(135deg, #038214, #1571e1);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 .news-item a:hover {
@@ -178,7 +181,6 @@ nav ul li a:hover {
 
 .gallery h2 {
     margin-bottom: 20px;
-    
 }
 
 .gallery-grid {
@@ -208,7 +210,7 @@ nav ul li a:hover {
     display: inline-block;
     background: linear-gradient(135deg, #038214, #1571e1);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 .events-list {
@@ -251,7 +253,7 @@ nav ul li a:hover {
     margin-top: 0;
     background: linear-gradient(135deg, #038214, #1571e1);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 /* Modal */
@@ -396,4 +398,46 @@ footer .social-links a {
 
 footer .social-links a:hover {
     color: #CCFF33;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Nav Menu */
+    nav ul {
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Ajusta la distancia desde el encabezado */
+        right: 0;
+        background-color: #121B25;
+        width: 100%;
+        z-index: 2; /* Asegura que el menú esté por encima del contenido */
+    }
+
+    nav ul.show {
+        display: flex; /* Muestra el menú cuando el botón hamburguesa está activo */
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 3; /* Asegura que el botón hamburguesa esté por encima del menú */
+    }
+
+    .hamburger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.3s;
+    }
+
+    .hero-text h2, .intro-section h2, .latest-news h2, .gallery h2, .events h2, .item h3, .weather-section h2, .plants-section h2 {
+        font-size: 24pt; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+
+    .news-item, .plant-item, .item {
+        width: calc(100% - 20px); /* Ajusta el ancho en pantallas pequeñas */
+    }
 }

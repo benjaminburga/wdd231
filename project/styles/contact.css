@@ -1,115 +1,99 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f8ff;
-    color: #333;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
 /* Header Styles */
-header.nav-hero {
+header {
     background-color: #121B25;
     color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px;
+    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, text-decoration 0.3s;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #FFD700;
-    text-decoration: underline;
+    color: #6DCF6E;
 }
 
-/* Section Styles */
-.info-section {
-    padding: 2rem;
+/* Contact Section */
+.contact-section {
+    padding: 40px;
+    background-color: #cee7c8;
+    text-align: center;
+}
+
+.contact-section .container {
     max-width: 800px;
     margin: 0 auto;
-}
-
-.info-block {
     background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 30px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
 }
 
-.info-block h2 {
-    margin-top: 0;
+.contact-section h2 {
+    margin-bottom: 20px;
+    color: #121B25;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #038214, #1571e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 1rem;
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
-form input, form textarea, form button {
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.contact-form input, .contact-form textarea {
     width: 100%;
-    box-sizing: border-box;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-form input:focus, form textarea:focus {
-    border-color: #4CAF50;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
-    outline: none;
-}
-
-form button {
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
     background-color: #4CAF50;
     color: white;
-    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 1rem;
-    padding: 1rem;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s;
 }
 
-form button:hover {
+.contact-form button:hover {
     background-color: #45a049;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-form button:focus {
-    outline: none;
 }
 
 /* Footer Styles */
@@ -117,60 +101,24 @@ footer {
     background-color: #121B25;
     color: white;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
+    padding: 10px;
+    position: relative;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer p {
-    margin: 0;
+footer .social-links {
+    margin-top: 10px;
 }
 
-footer a {
-    color: #FFD700;
-    text-decoration: underline;
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
-footer a:hover {
-    color: #fff;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    header.nav-hero {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-        width: 100%;
-    }
-
-    nav ul li a {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .info-section {
-        padding: 1rem;
-    }
-
-    .info-block {
-        padding: 1rem;
-    }
-
-    form {
-        width: 100%;
-    }
+footer .social-links a:hover {
+    color: #CCFF33;
 }

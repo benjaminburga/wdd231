@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Toggle menu for mobile
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+
+    // Weather API
     const weatherContainer = document.getElementById('weather-container');
     const apiKey = 'a699049b0b45b54ba8a2c400887c288d';
     const city = 'LIMA'; 
@@ -51,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             plantsContainer.innerHTML = plantsHTML;
         })
         .catch(error => {
-            console.error('Error fetching plants data:', error);
-            plantsContainer.innerHTML = '<p>Unable to retrieve plants data at this time.</p>';
+            console.error('Error fetching plant data:', error);
+            plantsContainer.innerHTML = '<p>Unable to retrieve plant data at this time.</p>';
         });
 });
